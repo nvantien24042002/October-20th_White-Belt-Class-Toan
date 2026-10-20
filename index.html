@@ -543,8 +543,8 @@
     <section class="opening-card" aria-labelledby="opening-title">
       <div class="opening-flower" aria-hidden="true">✿</div>
       <h1 id="opening-title">Vòng quay sắp mở!</h1>
-      <p class="opening-copy">Cùng chờ một chút hồi hộp nhé.<br>Trò chơi sẽ bắt đầu lúc 19:30.</p>
-      <p class="opening-time" aria-label="Giờ mở vòng quay">19:30</p>
+      <p class="opening-copy">Cùng chờ một chút hồi hộp nhé.<br>Trò chơi sẽ bắt đầu lúc 19:20.</p>
+      <p class="opening-time" aria-label="Giờ mở vòng quay">19:20</p>
       <p class="opening-countdown" id="opening-countdown"></p>
     </section>
   </div>
@@ -616,7 +616,7 @@
     const TAU = Math.PI * 2, step = TAU / prizes.length, wheel = $('wheel'), ctx = wheel.getContext('2d');
     let rotation = 0, spinning = false, soundOn = true, audio = null, lastResult = '', confettiFrame = 0;
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const unlockAt = new Date(2026, 9, 20, 19, 30, 0);
+    const unlockAt = new Date(2026, 9, 20, 19, 20, 0);
     let unlocked = Date.now() >= unlockAt.getTime();
     const openingGate = $('opening-gate'), shell = document.querySelector('.shell');
     function updateOpeningGate() {
